@@ -1,0 +1,139 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Blue: hsl(219, 85%, 26%);
+}
+* {
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 750px;
+  margin: auto;
+
+  place-content: center;
+  display: flex;
+  background-color: var(--Very-light-grayish-blue);
+}
+.container {
+  background-color: var(--White);
+  /* padding: 0.5rem; */
+  margin: auto;
+  width: min(80%, 1440px);
+  box-shadow: 2px;
+
+  /* font-size: 12px; */
+}
+
+.header {
+  display: flex;
+
+  align-items: center;
+  /* justify-content: space-between; */
+  font-size: small;
+  padding-bottom: 10px;
+
+  /* justify-content: space-between; */
+}
+.notify {
+  position: relative;
+  left: 15px;
+  /* padding-right: -30px; */
+  font-size: 10px;
+}
+.content {
+  padding: 15px;
+}
+.candy {
+  padding-left: 10px;
+}
+.number {
+  padding-left: 9px;
+  padding-right: 9px;
+  border: 1px solid black;
+  background-color: blue;
+  color: white;
+  font-size: 20px;
+  border-radius: 7px;
+  position: relative;
+  left: 8px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+img {
+  border-radius: 50%;
+  width: 1.75rem;
+}
+.read {
+  padding-left: 350px;
+}
+.two {
+  display: flex;
+  border-radius: 30%;
+  width: 2rem;
+  position: relative;
+  right: -180px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* border: 20px; */
+  padding: 20px;
+}
+p {
+  color: var(--Grayish-blue);
+}
+strong {
+  color: black;
+}
+.first,
+.second,
+.third {
+  background-color: var(--Light-grayish-blue-1);
+  padding: 15px;
+}
+.candy {
+  padding-top: 20px;
+}
+.luffy {
+  color: var(--Grayish-blue);
+  padding-left: 35px;
+  padding-top: 5px;
+  background-color: var(--Light-grayish-blue-2);
+}
+.seen {
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: min(90%, 400px);
+    align-content: center;
+    justify-content: center;
+  }
+  .read {
+    padding-left: 30px;
+  }
+  .two {
+    position: relative;
+    right: -15px;
+  }
+}
